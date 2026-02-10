@@ -1,0 +1,273 @@
+/* ==========================================================
+   Design Tokens — Figma 변수에서 추출
+   이 파일의 CSS 커스텀 프로퍼티가 "단 하나의 진실 소스"입니다.
+   tailwind.config.js 와 theme.js 는 이 변수를 참조합니다.
+   ========================================================== */
+
+:root {
+  /* --------------------------------------------------------
+     Colors / Background
+     ------------------------------------------------------ */
+  /* Default */
+  --color-bg-default: #ffffff;
+  --color-bg-default-hover: #f5f5f5;
+  --color-bg-default-secondary: #f5f5f5;
+  --color-bg-default-secondary-hover: #e6e6e6;
+  --color-bg-default-tertiary: #d9d9d9;
+  --color-bg-default-tertiary-hover: #b3b3b3;
+
+  /* Disabled */
+  --color-bg-disabled: #d9d9d9;
+
+  /* Brand */
+  --color-bg-brand: #2c2c2c;
+  --color-bg-brand-hover: #1e1e1e;
+  --color-bg-brand-secondary: #e6e6e6;
+  --color-bg-brand-secondary-hover: #d9d9d9;
+  --color-bg-brand-tertiary: #f5f5f5;
+
+  /* Neutral */
+  --color-bg-neutral: #5a5a5a;
+  --color-bg-neutral-hover: #434343;
+  --color-bg-neutral-secondary: #cdcdcd;
+  --color-bg-neutral-secondary-hover: #b2b2b2;
+  --color-bg-neutral-tertiary: #e3e3e3;
+  --color-bg-neutral-tertiary-hover: #cdcdcd;
+
+  /* Positive */
+  --color-bg-positive: #14ae5c;
+  --color-bg-positive-hover: #009951;
+  --color-bg-positive-secondary: #cff7d3;
+  --color-bg-positive-secondary-hover: #aff4c6;
+  --color-bg-positive-tertiary: #ebffee;
+  --color-bg-positive-tertiary-hover: #cff7d3;
+
+  /* Warning */
+  --color-bg-warning: #e8b931;
+  --color-bg-warning-hover: #e5a000;
+  --color-bg-warning-secondary: #fff1c2;
+  --color-bg-warning-tertiary: #fffbeb;
+  --color-bg-warning-tertiary-hover: #fff1c2;
+
+  /* Danger */
+  --color-bg-danger: #ec221f;
+  --color-bg-danger-hover: #c00f0c;
+  --color-bg-danger-secondary: #fdd3d0;
+  --color-bg-danger-secondary-hover: #fcb3ad;
+  --color-bg-danger-tertiary: #fee9e7;
+  --color-bg-danger-tertiary-hover: #fdd3d0;
+
+  /* Utilities */
+  --color-bg-scrim: #ffffffcc;
+  --color-bg-blanket: #000000b2;
+  --color-bg-overlay: #00000080;
+  --color-bg-measurement: #fae1fa;
+
+  /* --------------------------------------------------------
+     Colors / Text
+     ------------------------------------------------------ */
+  /* Default */
+  --color-text-default: #1e1e1e;
+  --color-text-default-secondary: #757575;
+  --color-text-default-tertiary: #b3b3b3;
+
+  /* Disabled */
+  --color-text-disabled: #b3b3b3;
+  --color-text-disabled-on: #b3b3b3;
+
+  /* Brand */
+  --color-text-brand: #2c2c2c;
+  --color-text-brand-secondary: #444444;
+  --color-text-brand-tertiary: #757575;
+  --color-text-brand-on: #f5f5f5;
+  --color-text-brand-on-secondary: #1e1e1e;
+  --color-text-brand-on-tertiary: #2c2c2c;
+
+  /* Neutral */
+  --color-text-neutral: #303030;
+  --color-text-neutral-secondary: #5a5a5a;
+  --color-text-neutral-tertiary: #767676;
+  --color-text-neutral-on: #f3f3f3;
+  --color-text-neutral-on-secondary: #303030;
+  --color-text-neutral-on-tertiary: #434343;
+
+  /* Positive */
+  --color-text-positive: #02542d;
+  --color-text-positive-secondary: #009951;
+  --color-text-positive-tertiary: #14ae5c;
+  --color-text-positive-on: #ebffee;
+  --color-text-positive-on-secondary: #02542d;
+  --color-text-positive-on-tertiary: #02542d;
+
+  /* Warning */
+  --color-text-warning: #522504;
+  --color-text-warning-secondary: #975102;
+  --color-text-warning-tertiary: #bf6a02;
+  --color-text-warning-on: #401b01;
+  --color-text-warning-on-secondary: #682d03;
+  --color-text-warning-on-tertiary: #522504;
+
+  /* Danger */
+  --color-text-danger: #900b09;
+  --color-text-danger-secondary: #c00f0c;
+  --color-text-danger-tertiary: #ec221f;
+  --color-text-danger-on: #fee9e7;
+  --color-text-danger-on-secondary: #900b09;
+  --color-text-danger-on-tertiary: #900b09;
+
+  /* --------------------------------------------------------
+     Colors / Border
+     ------------------------------------------------------ */
+  --color-border-default: #d9d9d9;
+  --color-border-default-secondary: #757575;
+  --color-border-default-tertiary: #383838;
+  --color-border-disabled: #b3b3b3;
+  --color-border-brand: #2c2c2c;
+  --color-border-brand-secondary: #444444;
+  --color-border-brand-tertiary: #757575;
+  --color-border-neutral: #303030;
+  --color-border-neutral-secondary: #767676;
+  --color-border-neutral-tertiary: #b2b2b2;
+  --color-border-positive: #02542d;
+  --color-border-positive-secondary: #009951;
+  --color-border-positive-tertiary: #14ae5c;
+  --color-border-warning: #522504;
+  --color-border-warning-secondary: #975102;
+  --color-border-warning-tertiary: #bf6a02;
+  --color-border-danger: #900b09;
+  --color-border-danger-secondary: #c00f0c;
+  --color-border-danger-tertiary: #ec221f;
+  --color-border-swatch: #0000003d;
+
+  /* --------------------------------------------------------
+     Colors / Icon
+     ------------------------------------------------------ */
+  --color-icon-default: #1e1e1e;
+  --color-icon-default-secondary: #757575;
+  --color-icon-default-tertiary: #b3b3b3;
+  --color-icon-disabled: #b3b3b3;
+  --color-icon-brand: #2c2c2c;
+  --color-icon-brand-secondary: #444444;
+  --color-icon-brand-on: #f5f5f5;
+  --color-icon-brand-on-secondary: #1e1e1e;
+  --color-icon-brand-on-tertiary: #2c2c2c;
+  --color-icon-neutral: #303030;
+  --color-icon-neutral-secondary: #5a5a5a;
+  --color-icon-neutral-tertiary: #767676;
+  --color-icon-neutral-on: #f3f3f3;
+  --color-icon-neutral-on-secondary: #303030;
+  --color-icon-neutral-on-tertiary: #434343;
+  --color-icon-positive: #02542d;
+  --color-icon-positive-secondary: #009951;
+  --color-icon-positive-tertiary: #14ae5c;
+  --color-icon-positive-on: #ebffee;
+  --color-icon-positive-on-secondary: #02542d;
+  --color-icon-positive-on-tertiary: #024023;
+  --color-icon-warning: #522504;
+  --color-icon-warning-secondary: #975102;
+  --color-icon-warning-tertiary: #bf6a02;
+  --color-icon-warning-on: #401b01;
+  --color-icon-warning-on-secondary: #682d03;
+  --color-icon-warning-on-tertiary: #522504;
+  --color-icon-danger: #900b09;
+  --color-icon-danger-secondary: #c00f0c;
+  --color-icon-danger-tertiary: #ec221f;
+  --color-icon-danger-on: #fee9e7;
+  --color-icon-danger-on-secondary: #900b09;
+  --color-icon-danger-on-tertiary: #900b09;
+
+  /* --------------------------------------------------------
+     Typography
+     ------------------------------------------------------ */
+  --font-family-sans: "Inter", sans-serif;
+  --font-family-mono: "Roboto Mono", monospace;
+
+  /* Font Sizes */
+  --font-size-xs: 14px;       /* Body Small */
+  --font-size-sm: 16px;       /* Body Base / Code */
+  --font-size-md: 20px;       /* Subheading */
+  --font-size-lg: 24px;       /* Heading */
+  --font-size-xl: 32px;       /* Subtitle */
+  --font-size-2xl: 48px;      /* Title Page */
+  --font-size-3xl: 72px;      /* Title Hero */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.2;       /* Headings */
+  --leading-normal: 1.4;      /* Body */
+  --leading-code: 1.3;        /* Code */
+  --leading-none: 1;          /* Single-line */
+
+  /* Letter Spacing */
+  --tracking-tighter: -3px;   /* Hero */
+  --tracking-tight: -2px;     /* Title Page, Heading */
+  --tracking-normal: 0px;
+
+  /* --------------------------------------------------------
+     Spacing
+     ------------------------------------------------------ */
+  --space-100: 4px;
+  --space-200: 8px;
+  --space-300: 12px;
+  --space-400: 16px;
+  --space-600: 24px;
+  --space-800: 32px;
+  --space-1200: 48px;
+  --space-1600: 64px;
+  --space-2400: 96px;
+  --space-4000: 160px;
+
+  /* Negative Spacing */
+  --space-neg-100: -4px;
+  --space-neg-200: -8px;
+  --space-neg-300: -12px;
+  --space-neg-400: -16px;
+  --space-neg-600: -24px;
+
+  /* --------------------------------------------------------
+     Border Radius
+     ------------------------------------------------------ */
+  --radius-100: 4px;
+  --radius-200: 8px;
+  --radius-400: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* --------------------------------------------------------
+     Border Width
+     ------------------------------------------------------ */
+  --border-width: 1px;
+
+  /* --------------------------------------------------------
+     Shadows (Depth)
+     ------------------------------------------------------ */
+  --shadow-200: 0 1px 4px 0 rgba(12, 12, 13, 0.05),
+                0 1px 4px 0 rgba(12, 12, 13, 0.10);
+  --shadow-300: 0 4px 4px -1px rgba(12, 12, 13, 0.05),
+                0 4px 4px -1px rgba(12, 12, 13, 0.10);
+
+  /* --------------------------------------------------------
+     Size Scale (컴포넌트 크기 기준값)
+     Figma의 Scale 변수에서 추출 — 아이콘 버튼·컴포넌트 높이 등에 사용
+     ------------------------------------------------------ */
+  --size-scale-03: 16px;     /* 아이콘 기본 크기 */
+  --size-scale-06: 32px;     /* Small 컴포넌트 높이 / 아이콘 버튼 radius */
+  --size-scale-07: 40px;     /* Medium 컴포넌트 높이 */
+
+  /* --------------------------------------------------------
+     Palette (원시 색상)
+     ------------------------------------------------------ */
+  --color-slate-200: #e3e3e3;
+  --color-image-placeholder: #e3e3e3;
+
+  /* --------------------------------------------------------
+     Misc
+     ------------------------------------------------------ */
+  --icon-small: 24px;
+  --padding-xl: 24px;
+  --device-width: 1200px;
+}
